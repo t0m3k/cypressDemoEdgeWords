@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ffx": "npx cypress run --headed --browser firefox",
+    "chrome": "npx cypress run --browser chrome"
   },
   "author": "Tomasz Tracz",
   "license": "ISC OR GPL-3.0",
