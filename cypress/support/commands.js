@@ -23,3 +23,22 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("addToCart", (product) => {
+  // cy.pause();
+  cy.visit("https://www.edgewordstraining.co.uk/demo-site");
+  cy.get(".woocommerce-store-notice__dismiss-link").click();
+  cy.get("#woocommerce-product-search-field-0").type(product + "{enter}");
+
+  cy.get(".single_add_to_cart_button").click();
+  // cy.get("div#product-29 div.summary").find("button[name=add-to-cart]").click();
+  // cy.get("div#product-29 div.summary").within(() => {
+  //   cy.get("button[name=add-to-cart]").click();
+  // });
+
+  cy.contains(/^view/i).click(); // start with "view" (/^view/) and is case insensitive (/view/i)
+
+  cy.get("#content").contains("Cap");
+
+  cy.get("#coupon_code").type("edgewords15{enter}");
+});
