@@ -3,7 +3,7 @@ describe("multiple capture and comparison", function () {
     cy.visit("https://www.edgewordstraining.co.uk/demo-site/");
     //Place cap order
     cy.get("#woocommerce-product-search-field-0").type("cap{enter}");
-    cy.contains("Add to cart").click();
+    cy.contains("Add to cart").click().screenshot();
     cy.contains("View cart").then(($jqueryelm) => {
       //Bonkers - no need to do this but...
       //contains yeilds a jquery element. You can cypress wrap it then click it
