@@ -4,7 +4,7 @@ module.exports = defineConfig({
   projectId: "ndmvsm",
   reporter: "junit",
   reporterOptions: {
-    mochaFile: "cypress/results/junit-result-[hash].xmpl",
+    mochaFile: "cypress/results/junit-result-[hash].xml",
     toConsole: true,
   },
   e2e: {
