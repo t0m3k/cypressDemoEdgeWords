@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "ndmvsm",
   e2e: {
     baseUrl: "https://www.edgewordstraining.co.uk/demo-site",
     setupNodeEvents(on, config) {

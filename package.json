@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "ffx": "npx cypress run --headed --browser firefox",
-    "chrome": "npx cypress run --browser chrome"
+    "chrome": "npx cypress run --browser chrome",
+    "record": "npx cypress run --record --key 3cb19ad4-8669-4e46-94c9-63b073eb3665"
   },
   "author": "Tomasz Tracz",
   "license": "ISC OR GPL-3.0",
