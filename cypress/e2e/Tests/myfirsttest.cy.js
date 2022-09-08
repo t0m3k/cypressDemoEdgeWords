@@ -14,7 +14,7 @@ describe("empty spec", () => {
     cy.log("Runs once at the end of this suite");
   });
 
-  it.only("Orders an item", function () {
+  it("Orders an item", function () {
     cy.addToCart("belt");
   });
   it("is another test", function () {
