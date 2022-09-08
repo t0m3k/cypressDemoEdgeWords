@@ -13,7 +13,6 @@ describe("multiple capture and comparison", function () {
     });
     //Capture total price text of product line...then(...)
     cy.get("td.product-subtotal")
-      .screenshot()
       .invoke("text")
       .then((lineprice) => {
         console.log(`We have the line price here ${lineprice}`);
