@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.1260" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-09-09T13:24:06" tests="0" file="cypress/e2e/Tests/usingFixtures.cy.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Using fixture and env vars" timestamp="2022-09-09T13:24:06" tests="1" time="1.9870" failures="0">
+    <testcase name="Using fixture and env vars uses a fixture" time="2.0390" classname="uses a fixture">
+    </testcase>
+  </testsuite>
+</testsuites>
